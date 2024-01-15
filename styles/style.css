@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* common code and reset code */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    line-height: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #fff;
+    scroll-behavior: smooth;
+    font-family: "Mulish", sans-serif;
+}
+
+body{
+    width: 100rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.2rem 0.2rem 0.2rem #222, -0.2rem 0 0.2rem #222;
+}
+
+.primary-title{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 1.5rem;
+}
+
+.section-title{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 1rem;
+}
+
+.primary-discrition{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px; 
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.primary-btn{
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    color: #fff;
+    background-color: #ff5400;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.text-color{
+    color: #ff5400;
+}
+
+/* common code and reset code */
+
+/* navber relativ style */
+header{
+    margin: 0 4.2rem;
+}
+/* navber relative style */
+.navber{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-content img{
+    width: 20%;
+}
+
+#menu-icon{
+    display: none;
+    color: #000;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+/* banner relative style */
+#banner{
+    width: 100%;
+    height: 50rem;
+    background-image: linear-gradient(180deg,
+     rgba(19, 19, 24, 0.80) 0%, 
+    rgba(19, 19, 24, 0.00) 100%),
+     url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+     background-position: bottom right, left top;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title{
+    font-size: 4.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.banner-content{
+    width: 60%;
+}
+.banner-discription{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.banner-button {
+    width: 56rem;
+    height: 6rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-btn{
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    background-color: #fff;
+    color: rgba(19, 19, 24, 0.50);;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 48.5%;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        
+      }    
+
+    .hidden{
+        display: none;
+    }
+    
+
+    .banner-content{
+        width: 70%;
+        margin: auto;
+    }
+
+    .banner-title{
+        font-size: 3rem;
+    }
+
+    .banner-button{
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        margin: auto;
+        padding: 2rem 0;
+    }
+
+    .banner-button button{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+}
