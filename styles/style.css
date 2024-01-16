@@ -165,10 +165,167 @@ nav li a{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
+/* tours relative style */
+#tours{
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.tours-content p{
+    width: 80%;
+    margin: 2rem;
+}
 
+.tours-img img{
+    width: 100%;
+    margin-left: 2rem;
+}
 
+.tours-content, .tours-img{
+    flex: 0.5;
+}
 
+/* destination relative style */
+#destination{
+    padding: 3rem;
+}
+
+.destination-content{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.pic-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .pic-div1, .pic-div2, .pic-div3{
+    display: flex;
+} */
+
+.pic-container{
+    display: grid;
+    grid-template-areas: 
+    'pic-div1 pic-div1 pic-div1 pic-div1 pic-div1 pic-div1  pic-div2 pic-div2 pic-div2 pic-div2 pic-div2 pic-div2'
+    'pic-div3 pic-div3 pic-div3 pic-div3 pic-div4 pic-div4  pic-div4 pic-div4 pic-div4 pic-div5 pic-div5 pic-div5'
+    'pic-div6 pic-div6 pic-div6 pic-div6 pic-div6 pic-div6  pic-div7 pic-div7 pic-div7 pic-div7 pic-div7 pic-div7';
+    gap: 2rem;
+}
+.pic-div1 { grid-area: pic-div1; }
+.pic-div2 { grid-area: pic-div2; }
+.pic-div3 { grid-area: pic-div3; }
+.pic-div4 { grid-area: pic-div4; }
+.pic-div5 { grid-area: pic-div5; }
+.pic-div6 { grid-area: pic-div6; }
+.pic-div7 { grid-area: pic-div7; }
+
+.pic-title h4{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 15rem;
+    left: 15rem;
+}
+
+/* choose relative style */
+#choose{
+    padding: 4rem;
+}
+
+.choose-center-dis{
+    width: 35rem;
+    margin: 3rem auto;
+}
+
+.choose-content{
+    width: 35rem;
+    height: 19rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+ }
+
+ .choose-pink{
+    width: 35rem;
+    height: 19rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+ }
+
+  .choose-center{
+    width: 35rem;
+    height: 19rem;
+    padding: 1rem 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+  }
+
+  .chose-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #choose h4{
+    margin: 1rem;
+  }
+
+  #discounts{
+    padding: 4rem;
+    position: relative;
+  }
+  .discount-scontent{
+    width: 35rem;
+    margin: 2rem auto;
+  }
+
+  .discounts-card-container{
+    width: 40rem;
+    height: 25rem;
+    padding: 4rem;
+    border-radius: 16px;
+    border: 2px solid #c80c0c;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    bottom: 32rem;
+    left: 47rem;
+    margin-bottom: 0;
+  }
+  .discounts-card-container2{
+    width: 40rem;
+    height: 25rem;
+    padding: 4rem;
+    border-radius: 16px;
+    border: 2px solid #c80c0c;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    bottom: 32rem;
+    left: 5rem;
+  }
+
+  .discounts-img{
+    width: 100%;
+  }
+
+  .deals-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 
 
 
@@ -217,7 +374,30 @@ nav li a{
         width: 70%;
         display: flex;
         justify-content: space-between;
-        
-
     }
+
+    #tours{
+        flex-direction: column;
+    }
+    .tours-img img{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .pic-container{
+       grid-template-areas: 'pic-div1' 'pic-div2''pic-div3''pic-div4''pic-div5''pic-div6''pic-div7';
+    }
+
+    .chose-container{
+        flex-direction: column;
+    }
+
+    .choose-center{
+        margin-left: 0;
+    }
+
+    .discounts-card-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }
