@@ -491,7 +491,32 @@ nav li a{
   font-weight: 400;
 }
 
-  
+/* footer relative style */
+footer{
+  max-width: 90rem;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+.footer-content img{
+  width: 13%;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-dis{
+  width: 40%;
+  margin: 2rem auto;
+}
+.footer-links a{
+  font-size: 2rem;
+  margin-right: 3rem;
+  text-align: center;
+}  
+.footer-links {
+  text-align: center;
+}  
 
 
 
