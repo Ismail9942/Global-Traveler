@@ -47,7 +47,7 @@ body{
 
 .primary-btn{
     font-size: 1.4rem;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     padding: 1rem 1.2rem;
     color: #fff;
@@ -71,6 +71,8 @@ header{
 }
 /* navber relative style */
 .navber{
+    max-width: 90rem;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +81,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 
 .nav-content img{
@@ -107,6 +108,8 @@ nav li a{
 }
 /* banner relative style */
 #banner{
+    max-width: 90rem;
+    margin: auto;
     width: 100%;
     height: 50rem;
     background-image: linear-gradient(180deg,
@@ -167,7 +170,9 @@ nav li a{
 }
 /* tours relative style */
 #tours{
-    padding: 3rem 5rem;
+    max-width: 90rem;
+    margin: auto;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,6 +195,8 @@ nav li a{
 /* destination relative style */
 #destination{
     padding: 3rem;
+    max-width: 90rem;
+    margin: auto;
 }
 
 .destination-content{
@@ -201,10 +208,6 @@ nav li a{
     width: 100%;
     height: 100%;
 }
-
-/* .pic-div1, .pic-div2, .pic-div3{
-    display: flex;
-} */
 
 .pic-container{
     display: grid;
@@ -233,7 +236,10 @@ nav li a{
 
 /* choose relative style */
 #choose{
+    max-width: 90rem;
+    margin: auto;
     padding: 4rem;
+    position: relative;
 }
 
 .choose-center-dis{
@@ -295,29 +301,38 @@ nav li a{
     height: 25rem;
     padding: 4rem;
     border-radius: 16px;
-    border: 2px solid #c80c0c;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    position: relative;
-    bottom: 32rem;
-    left: 47rem;
-    margin-bottom: 0;
+    position: absolute;
+    top: 26rem;
+    right: 10rem;
   }
   .discounts-card-container2{
     width: 40rem;
     height: 25rem;
     padding: 4rem;
     border-radius: 16px;
-    border: 2px solid #c80c0c;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
-    position: relative;
-    bottom: 32rem;
-    left: 5rem;
+    position: absolute;
+    bottom: 56rem;
+    left: 10rem;
+  }
+  .discounts-card-container3{
+    width: 40rem;
+    height: 25rem;
+    padding: 4rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+    bottom: 13rem;
+    right: 10rem;
   }
 
   .discounts-img{
     width: 100%;
+    margin: 2rem 0;
   }
 
   .deals-card{
@@ -325,8 +340,158 @@ nav li a{
     justify-content: space-between;
     align-items: center;
   }
-  
 
+  .deals-card-container h4{
+    color: #ff5400;
+    margin: 1rem;
+  }
+
+  .deals-btn{
+    text-align: center;
+  }
+
+  .dwals-hidden{
+    display: none;
+  }
+
+  /* place relative style */
+  #Place{
+    max-width: 90rem;
+    padding: 4rem 2rem;
+    margin: auto;
+  }
+
+  .place-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .place-content, .place-img{
+    flex: 0.5;
+  }
+
+  .place-img img{
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, 
+    #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
+  }
+.bold-text{
+    width: 40rem;
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.place-title{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 15rem;
+    left: 8rem;
+}
+.icons-container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+ .icon-lsft{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    position: relative;
+    bottom: 11rem;
+    left: 2rem;
+}
+.icon-right{
+    position: relative;
+    bottom: 11rem;
+    right: 2rem;
+}
+.icon-left i{
+    margin: 1rem;
+   
+}
+.icon-right i{
+    margin: 1rem;
+}
+/*  */
+.line{
+    width: 90%;
+    height: 0.7rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    background-color: lightgray;
+    position: relative;
+    bottom: 12rem;
+    left: 1rem;
+}
+/* Newsletter relative style */
+  #Newsletter{
+    max-width: 90rem;
+    padding: 4rem 2rem;
+    margin: auto;
+  }
+
+  .Newsletter-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Newsletter-content, .Newsletter-img{
+    flex: 0.5;
+  }
+  .Newsletter-img img{
+    width: 100%;
+  }
+  .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+
+  }
+  input{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+    background: rgba(19, 20, 32, 0.1);
+  }
+  .form button{
+    margin-bottom: 2rem;
+  }
+  .rotate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22rem;
+    height: 10rem;
+    background-color: #ff5400;
+    border-radius: 0.6rem;
+    position: relative;
+    bottom: 14rem;
+    left: 20rem;
+    rotate: -25deg;
+  }
+  .rotate-title{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+  }
+.rotate-h{
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+  
 
 
 
@@ -342,10 +507,17 @@ nav li a{
         font-size: 48.5%;
     }
 
+    header{
+        padding-top: 4rem;
+    }
+
+    .nav-content{
+        margin-left: 1.5rem;
+    }
+
     #menu-icon {
         display: block;
-        cursor: pointer;
-        
+        cursor: pointer; 
       }    
 
     .hidden{
@@ -395,9 +567,46 @@ nav li a{
         margin-left: 0;
     }
 
-    .discounts-card-container{
-        display: flex;
-        flex-direction: column-reverse;
+    .discounts-img {
+        display: none;
     }
+
+    .dwals-hidden{
+        display: block;
+        margin-bottom: 2rem;
+      }
+
+    .responsive-card{
+        width: 42rem;
+        position: absolute;
+        top: 50rem;
+        left: 4.5rem;
+      }
+    .responsive-card2{
+        width: 42rem;
+        position: absolute;
+        top: 115rem;
+        left: 4.5rem;
+      }
+    .responsive-card3{
+        width: 42rem;
+        position: absolute;
+        bottom: 12rem;
+        left: 4.5rem;
+      }
+
+      .Newsletter-container, .place-main{
+        flex-direction: column;
+        margin-top: 3rem;
+      }
+      .form{
+        width: 100%;
+      }
+
+      .rotate{
+        position: relative;
+        left: 23.5rem;
+      }
+
     
 }
